@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>eHealth</title>
+
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="static/css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="static/css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="static/css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="static/images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="static/css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+   <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <link rel="stylesheet" href="static/display.css">
+   <link rel="stylesheet" href="static/prod_des.css">
+</head>
+
+<body>
+   <!--header section start -->
+   <div class="header_section">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="logo"><a href="/"><img width="40%" src="static/images/logo.jpg"></a></div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+               <li class="nav-item">
+                  <a class="nav-link" href="/services">Services</a>
+               </li>
+
+               <li class="nav-item">
+                  <a class="nav-link" href="/about">About</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/contact">Contact Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/displayCategory">Product</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/cart">Cart ({{ noOfItems }})</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/history">history </a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="/logout">Logout</a>
+               </li>
+            </ul>
+
+         </div>
+      </nav>
+      <!--banner section start -->
+      <div class="banner_section layout_padding">
+         <div class="container-fluid">
+            <section class="slide-wrapper">
+               <div class="container-fluid">
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                        <li data-target="#myCarousel" data-slide-to="4"></li>
+                     </ol>
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner">
+                        <div class="carousel-item active">
+                           <div class="container">
+                              <div class="banner_main">
+                                 <h1 class="banner_taital">eHealth</h1>
+                                 <p class="banner_text">eHealth” is a web application that will help patients as well as
+                                    provide many features such as will maintain records of
+                                    counter sales, purchases, etc. </p>
+                                 <div class="btn_main">
+                                    <div class="contact_bt active "><a href="/contact">Contact Us</a></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="banner_main">
+                                 <h1 class="banner_taital">eHealth</h1>
+                                 <p class="banner_text">It will also help users to search for medicine and
+                                    its price.</p>
+                                 <div class="btn_main">
+                                    <div class="contact_bt active "><a href="/contact">Contact Us</a></div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="banner_main">
+                                 <h1 class="banner_taital">eHealth</h1>
+                                 <p class="banner_text">
+                                    Medicine is defined as the use of information and communication technologies
+                                    for health and can include the use of email, text
+                                    messaging, push notifications, websites, and mobile-based applications;</p>
+                                 <div class="btn_main">
+                                    <div class="contact_bt active ">
+                                       <a href="/contact">Contact Us</a>
+                                    </div>
+
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+
+
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+      <!--banner section end -->
+   </div>
+   <!--header section end -->
+   <!--about section start -->
+   <div class="about_section layout_padding">
+      <div class="container">
+         <h1 class="about_taital">About Us</h1>
+         <p class="about_text">Our mission is to connect everyone with quality, affordable health insurance and Medicare
+            plans</p>
+         <div class="about_section_2">
+            <div class="row">
+               <div class="col-lg-6">
+                  <div class="about_image"><img src="static/images/ban-bg.jpg"></div>
+               </div>
+               <div class="col-lg-6">
+                  <div class="about_taital_main">
+                     <p>
+                        People can order their required medicines or other medical-related items online, and the
+                        delivery support will provide
+                        the products door-to-door for the users. Using this system now users can get their needed
+                        medicine without leaving home.</p>
+                     <p>
+                        They can save money and they do not need to go out in this pandemic situation to buy medicine.
+                        In this crucial
+                        situation, “eHealth” is very helpful and it will act as a blessing for the people.
+                     </p>
+                     <div class="read_bt"><a href="/about">Read More</a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!--about section end -->
+   <!-- services section start -->
+   <div class="services_section layout_padding">
+      <div class="container">
+         <h1 class="services_taital">What We Do</h1>
+
+         <div class="services_section_2">
+            <div class="row">
+               <div class="col-lg-4">
+                  <div class="icon_box">
+                     <div class="icon_1"><img src="static/images/icon-1.png"></div>
+                  </div>
+                  <h4 class="selection_text">Excellent products</h4>
+                  <p class="ipsum_text">We offer our clients excellent quality services for many years, with the best
+                     products in the city.</p>
+                  <div class="icon_box">
+                     <div class="icon_1"><img src="static/images/icon-4.png"></div>
+                  </div>
+                  <h4 class="selection_text">Securities</h4>
+                  <p class="ipsum_text">We offer our clients excellent quality services for many years, with the best
+                     products in the city.</p>
+               </div>
+               <div class="col-lg-4">
+                  <div class="icon_box">
+                     <div class="icon_1"><img src="static/images/icon-2.png"></div>
+                  </div>
+                  <h4 class="selection_text">Delivery</h4>
+                  <p class="ipsum_text">We offer our clients excellent quality services for many years, with the best
+                     products in the city.</p>
+                  <div class="icon_box">
+                     <div class="icon_1"><img src="static/images/icon-5.png"></div>
+                  </div>
+                  <h4 class="selection_text">Save time</h4>
+                  <p class="ipsum_text">We offer our clients excellent quality services for many years, with the best
+                     products in the city.</p>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="layout_padding">
+      </br></br></br>
+   </div>
+   <!-- services section end -->
+   <!-- blog section start -->
+   <div class="blog_section layout_padding">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="blog_img"><img src="static/images/blog-img.png"></div>
+            </div>
+            <div class="col-md-6">
+               <h1 class="blog_taital">Easily Grow communication with customers</h1>
+               <p>
+                  <hr>
+                  Build a relationship. Take the time to be professional and personable with your customers.
+
+                  <hr>
+                  Listen to customers.
+                  <hr>
+                  Develop customer service standards.
+
+                  <hr>
+                  Resolve disputes quickly.
+                  <hr>
+               </p>
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- blog section end -->
+
+   <!-- contact section start -->
+   <div class="contact_section layout_padding">
+      <div class="container">
+         <h1 class="contact_taital">Get In Touch</h1>
+         <p class="contact_text">majority have suffered alteration in some form, by injected humour, or </p>
+         <div class="contact_section_2 layout_padding">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="contact_main">
+                     <input type="text" class="mail_text" placeholder="Full Name" name="Full Name">
+                     <input type="text" class="mail_text" placeholder="Phone Number" name="Phone Number">
+                     <input type="text" class="mail_text" placeholder="Email" name="Email">
+                     <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                     <div class="send_bt"><a href="#">SEND</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="map_main">
+                     <div class="map-responsive">
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d236207.0161340372!2d91.67943712685609!3d22.325873875664236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd8a64095dfd3%3A0x5015cc5bcb6905d9!2sChattogram!5e0!3m2!1sen!2sbd!4v1672293220671!5m2!1sen!2sbd"
+                           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                           referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- contact section end -->
+
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="location_main">
+            <div class="location_text"><img src="static/images/map-icon.png"><span class="padding_left_10"><a
+                     href="#">Location</a></span></div>
+            <div class="location_text center"><img src="static/images/call-icon.png"><span class="padding_left_10"><a
+                     href="#">Call ; 01 1234567890</a></span></div>
+            <div class="location_text right"><img src="static/images/mail-icon.png"><span class="padding_left_10"><a
+                     href="#">demo@gmail.com</a></span></div>
+         </div>
+         <div class="footer_section_2">
+            <div class="row">
+               <div class="col-lg-4">
+                  <h2 class="footer_taital">About</h2>
+                  <p class="footer_text">People can order their required medicines or other medical-related items
+                     online, and the
+                     delivery support will provide
+                     the products door-to-door for the users. Using this system now users can get their needed
+                     medicine without leaving home.</p>
+               </div>
+               <div class="col-lg-4">
+                  <h2 class="footer_taital">Services Link</h2>
+                  <p class="footer_text">We offer our clients excellent quality services for many years, with the best
+                     products in the city.</p>
+               </div>
+               <div class="col-lg-4">
+                  <h2 class="footer_taital">Subscribe</h2>
+                  <input type="text" class="Enter_text" placeholder="Enter Your Email" name="Enter Your Email">
+                  <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+                  <div class="social_icon">
+                     <ul>
+                        <li><a href="#"><img src="static/images/fb-icon.png"></a></li>
+                        <li><a href="#"><img src="static/images/twitter-icon.png"></a></li>
+                        <li><a href="#"><img src="static/images/linkedin-icon.png"></a></li>
+                        <li><a href="#"><img src="static/images/instagram-icon.png"></a></li>
+                        <li><a href="#"><img src="static/images/youtub-icon.png"></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">Copyright 2022 All Rights SMS
+         </p>
+      </div>
+   </div>
+   <!-- copyright section end -->
+   <!-- Javascript files-->
+   <script src="static/js/jquery.min.js"></script>
+   <script src="static/js/popper.min.js"></script>
+   <script src="static/js/bootstrap.bundle.min.js"></script>
+   <script src="static/js/jquery-3.0.0.min.js"></script>
+   <script src="static/js/plugin.js"></script>
+   <!-- sidebar -->
+   <script src="static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="static/js/custom.js"></script>
+   <!-- javascript -->
+   <script src="static/js/owl.carousel.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

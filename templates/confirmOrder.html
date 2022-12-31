@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cart Product
+{% endblock %}
+
+{% block main %}
+<div>
+    <div class="projTitle">
+        Order Confirm
+    </div>
+    </br>
+    <div align="center" class="align">
+        <table style="width:95%; text-align:center;" align="center"
+            class="table table-striped table-hover table-responsive">
+
+            <tr>
+                <th>S.No</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Image</th>
+            </tr>
+            {% for row in products %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>
+                    <img src={{url_for('static', filename='uploads/' + row[3]) }} height="50px" width="80px"
+                        id="productImage" />
+                </td>
+
+            </tr>
+            {% endfor %}
+
+
+        </table>
+    </div>
+    <div></br></div>
+</div>
+
+{% endblock %}

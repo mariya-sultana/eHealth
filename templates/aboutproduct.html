@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block title %}
+About_Product
+{% endblock %}
+
+{% block main %}
+
+
+<div class="container-fluid">
+    <div class="row text-center" id="about">
+
+        </br></br></br>
+        <div class="main-wrapper">
+            <div class="pcontainer">
+                <div class="product-div">
+                    <div class="product-div-left">
+                        <div class="img-pcontainer">
+                            <img src="{{url_for('static', filename='uploads/' +data[4]) }}" alt="medicine" width="40%"
+                                display="block">
+                            <!-- <img src="flower vase.png" alt="medicine"> -->
+                        </div>
+
+                    </div>
+                    <div class="product-div-right">
+                        <hr class="hr">
+                        <span class="product_name">{{data[1]}}</span></br>
+                        <hr class="hr">
+                        <span class="product_price">TK. {{data[2]}}</span>
+                        <hr class="hr">
+                        <div class="product-rating">
+                            <hr class="hr">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star-half-alt"></i></span>
+                            <span>(350 ratings)</span>
+                        </div>
+                        <hr class="hr">
+                        <p class="product-description">{{data[3]}}</p>
+                        <hr class="hr">
+
+                        <!-- quantity -->
+
+
+                        <h3><a class="btn btn-success" href="/addToCart?productId={{request.args.get('productId')}}">Add
+                                To Card
+                            </a>
+                        </h3>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- old -->
+
+
+    </div>
+</div>
+
+{% endblock %}

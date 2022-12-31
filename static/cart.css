@@ -1,0 +1,16 @@
+.align {
+    margin: auto;
+    width: 70%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.projTitle { 
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em 0;
+    border-bottom: 1px solid #dadada;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cart Product
+{% endblock %}
+
+{% block main %}
+<div>
+    <div class="projTitle">
+        My Shopping Cart
+    </div>
+    </br>
+    <div align="center" class="align">
+        <table style="width:95%; text-align:center;" align="center"
+            class="table table-striped table-hover table-responsive">
+
+            <tr>
+                <th>S.No</th>
+                <th>Product Name</th>
+                <th>Product Price</th>
+                <th>Product Image</th>
+                <th>Product status</th>
+                <th>Remove</th>
+                <th>Oder</th>
+            </tr>
+            {% for row in products %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+                <td>
+                    <img src={{url_for('static', filename='uploads/' + row[3]) }} height="50px" width="80px"
+                        id="productImage" />
+                </td>
+                <td>In Stock</td>
+                <td>
+                    <a href="/removeFromCart?productId={{row[0]}}" class="btn btn-danger">Remove</a>
+                </td>
+                <td>
+                    <a href="/confirmOrder?productId={{row[0]}}" class="btn btn-dark">Confirm</a>
+                </td>
+            </tr>
+            {% endfor %}
+
+            <tr>
+                <td></td>
+                <td></td>
+                <th>{{totalPrice}}</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+
+                    
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div></br></div>
+</div>
+
+{% endblock %}

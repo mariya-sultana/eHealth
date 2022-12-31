@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="/static/reg.css">
+    <title>Register</title>
+</head>
+
+<body></br></br></br>
+    <div class="container">
+        <form action="/register" method="post" class="form">
+
+            <div class="form__text">
+                Register
+            </div>
+
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="First name" id="firstname" name="firstname"
+                    required>
+                <label for="first name" class="form__label">First name</label>
+            </div>
+
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Last name" id="lastname" name="lastname" required>
+                <label for="last name" class="form__label">Last name</label>
+            </div>
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Username id=" username" name="username" required>
+                <label for="last name" class="form__label">Username</label>
+            </div>
+
+            <div class="form__group">
+                <input type="email" class="form__input" placeholder="Email address" id="email" name="email" required>
+                <label for="email" class="form__label">Email address</label>
+            </div>
+
+            <div class="form__group">
+                <input type="password" class="form__input" placeholder="Password" id="password" name="password"
+                    required>
+                <label for="password" class="form__label">Password</label>
+            </div>
+            <div class="form__group">
+                <input type="password" class="form__input" placeholder="Confirm Password" id="password"
+                    name="confirmation" required>
+                <label for="password" class="form__label">Confirm Password</label>
+            </div>
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Address" id="address1" name="address1" required>
+                <label for="password" class="form__label">
+                    <Address>
+                </label>
+            </div>
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="City" id="city" name="city" required>
+                <label for="password" class="form__label">
+                    <Address>
+                </label>
+            </div>
+            <div class="form__group">
+                <input type="number" class="form__input" placeholder="Phone" id="phone" name="phone" required>
+                <label for="password" class="form__label">Phone</label>
+            </div>
+            <div class="form__button">
+                <button class="btn btn-primary" type="submit">Register</button>
+                <!-- <a type="submit" href="#" class="btn">Submit</a> -->
+            </div>
+            </br></br>
+        </form>
+
+        <div class="from__bottom">
+            <a type="submit" href="/login" class="btn">Login</a>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
